@@ -1,5 +1,5 @@
 const form = document.querySelector("#form-habits")
-const nlwSetup = new nlwSetup(form)
+const nlwSetup = new NLWSetup(form)
 const button = document.querySelector("header button")
 
 button.addEventListener("click", add)
