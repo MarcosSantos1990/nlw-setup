@@ -1,5 +1,5 @@
 const form = document.querySelector("#form-habits")
-const nlwSetup = new NLWSetup(form)
+const nlwSetup = new nlwSetup(form)
 const button = document.querySelector("header button")
 
 button.addEventListener("click", add)
@@ -20,7 +20,7 @@ function add() {
 function save() {
   localStorage.setItem("NLWSetups@habits", JSON.stringify(nlwSetup.data))
 }
-// as duas barras significam "ou" e as chaves {} objeto vazio (ou traz o  quadrado check ou o vazio)
+
 const data = JSON.parse(localStorage.getItem("NLWSetups@habits")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
