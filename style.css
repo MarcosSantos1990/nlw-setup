@@ -48,7 +48,7 @@ button {
 }
 
 .habits {
-  margin-top: 55px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
 
@@ -107,6 +107,7 @@ input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
 }
+
 @media (max-width: 570px) {
   button div {
     display: none;
